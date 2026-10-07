@@ -152,5 +152,3 @@ export const contact = {
   reception: "Open 24 hours",
   restaurant: "7:00 AM to 10:30 PM",
 };
-
-export const DISCLAIMER = "Note: This is an academic project. The booking form is a demonstration interface.";

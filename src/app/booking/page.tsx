@@ -1,13 +1,12 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { BedDouble, Clock, Coffee, MapPin } from "lucide-react";
-import { DISCLAIMER } from "@/data/site";
 import { BookingForm } from "@/components/sections/Forms";
 import { Lines } from "@/components/sections/shared";
 
 export const metadata: Metadata = {
   title: "Booking",
-  description: "Plan your Himalayan escape at The Cedar Haven. A demonstration booking form for an academic project.",
+  description: "Plan your Himalayan escape at The Cedar Haven.",
   alternates: { canonical: "/booking" },
 };
 
@@ -23,7 +22,6 @@ export default function BookingPage() {
             <Suspense fallback={<div style={{ minHeight: 520 }} />}>
               <BookingForm />
             </Suspense>
-            <p className="disclaimer">{DISCLAIMER}</p>
           </div>
           <aside className="summary" data-fade>
             <h3>Every stay includes</h3>

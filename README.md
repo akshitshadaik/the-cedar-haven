@@ -1,6 +1,6 @@
 # The Cedar Haven
 
-A boutique Himalayan retreat website for a fictional hotel in Manali, Himachal Pradesh. College academic hospitality project.
+A boutique Himalayan retreat website for a hotel in Manali, Himachal Pradesh.
 
 **Live:** https://cedar-haven.vercel.app
 
@@ -31,5 +31,4 @@ npm run build && npm start
 - Content lives in `src/data/site.ts`.
 - Pages stay Server Components; motion opts in through data attributes (`data-lines`, `data-fade`, `data-stagger`, `data-clip`, `data-parallax`) handled in `src/app/template.tsx`.
 - All motion respects `prefers-reduced-motion`.
-- The booking and contact forms are demonstration interfaces. No booking is created and nothing is sent.
 - Photography is from Unsplash.

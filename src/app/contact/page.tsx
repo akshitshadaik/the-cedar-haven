@@ -21,7 +21,6 @@ export default function ContactPage() {
           <div className="card" data-fade>
             <h2 style={{ fontSize: "var(--fs-h3)" }}>Send us a note</h2>
             <ContactForm />
-            <p className="disclaimer">Note: This is an academic project. The contact form is a demonstration interface.</p>
           </div>
         </div>
       </section>
