@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Clock, Coffee, Flame, Footprints, Leaf, MountainSnow } from "lucide-react";
+import { ArrowRight, Clock, Coffee, Flame, Footprints, MountainSnow } from "lucide-react";
 import { photos } from "@/data/site";
 import { Hero } from "@/components/sections/Hero";
+import { AboutSection } from "@/components/sections/AboutSection";
 import { ExperiencePan } from "@/components/sections/ExperiencePan";
 import { DiningTabs } from "@/components/sections/DiningTabs";
 import { Gallery } from "@/components/sections/Gallery";
@@ -36,27 +37,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About preview */}
-      <section className="section surface" aria-labelledby="about-title">
-        <div className="container split">
-          <div className="media tall" data-clip>
-            <div className="px" data-parallax="5"><Image src={photos.cabin.src} alt={photos.cabin.alt} fill sizes="(min-width: 768px) 50vw, 100vw" /></div>
-          </div>
-          <div>
-            <h2 className="h2" id="about-title" data-lines><Lines text="Built from cedar,|run by the valley" /></h2>
-            <p className="lead" data-fade>Deodar beams, local stone and wide windows. Our team grew up between Vashisht and Old Manali, so ask them anything: which trail is dry after rain, where the best trout is, when the Rohtang road opens.</p>
-            <ul className="values plain" data-stagger>
-              <li><h3>Comfort</h3><p>Heaters that work on the coldest night and beds worth staying in.</p></li>
-              <li><h3>Nature</h3><p>Deodar forest at the gate and the snow line in every window.</p></li>
-              <li><h3>Hospitality</h3><p>A small team that remembers how you take your chai.</p></li>
-            </ul>
-            <Link href="/about" className="green-note" data-fade>
-              <Leaf />
-              <span><b>Our commitment to a greener tomorrow</b><p>Produce from valley farms, refillable glass in every room, no single-use plastic.</p></span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* About Section */}
+      <AboutSection />
+
 
       {/* Rooms */}
       <section className="section" aria-labelledby="rooms-title">

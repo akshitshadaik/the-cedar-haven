@@ -45,7 +45,7 @@ export function SiteFooter() {
         </div>
 
         <div className="f-legal">
-          <p>© 2026 The Cedar Haven. A fictional hotel created as a college academic project.</p>
+          <p>© 2026 The Cedar Haven</p>
           <a href="#main" className="f-top">Back to top <ArrowUp /></a>
         </div>
       </div>

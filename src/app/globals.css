@@ -517,3 +517,159 @@ html.is-loading { overflow: hidden }
   .g-grid.is-filtered .g-item { animation: tile-in .4s var(--ease) both; animation-delay: calc(var(--i) * 40ms) }
 }
 @keyframes tile-in { from { opacity: 0; transform: scale(.98) } }
+
+/* ===== About Section Custom Styling ===== */
+.kicker-tag {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--cedar-brown-700);
+  margin-bottom: 8px;
+  letter-spacing: .02em;
+}
+
+.about-media-col {
+  position: relative;
+}
+
+.owner-badge {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  background: var(--cedar-surface);
+  border: 1px solid var(--cedar-line);
+  box-shadow: var(--shadow-md);
+  border-radius: 4px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 4;
+  max-width: 320px;
+}
+
+.owner-badge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cedar-green-200);
+  color: var(--cedar-green-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.owner-badge-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--cedar-muted);
+  margin: 0;
+}
+
+.owner-badge-name {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--cedar-ink);
+  margin: 2px 0 0;
+  line-height: 1.2;
+}
+
+.owner-badge-sub {
+  font-size: 0.8rem;
+  color: var(--cedar-green-700);
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.about-paragraphs {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-body {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cedar-text);
+}
+
+.personal-touch-card {
+  margin-top: 32px;
+  padding: 24px 28px;
+  background: var(--cedar-surface-alt);
+  border-left: 3px solid var(--cedar-green-700);
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pt-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pt-header .ico-lg {
+  width: 22px;
+  height: 22px;
+  color: var(--cedar-green-800);
+  margin-bottom: 0;
+}
+
+.pt-header h3 {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  color: var(--cedar-ink);
+}
+
+.pt-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--cedar-text);
+}
+
+.pt-text strong {
+  color: var(--cedar-ink);
+  font-weight: 600;
+}
+
+.welcome-signoff {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--cedar-line);
+}
+
+.signoff-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--cedar-green-800);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 1023px) {
+  .owner-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-touch-card {
+    padding: 20px 20px;
+  }
+  .signoff-quote {
+    font-size: 1.2rem;
+  }
+}
+
